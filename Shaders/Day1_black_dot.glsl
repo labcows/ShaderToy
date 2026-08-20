@@ -4,7 +4,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
    
     float d = length(p);
     
-    vec3 col = vec3(d);
+    vec3 col = vec3(d, 0.5 * d, 0.12 * d);    
     
     fragColor = vec4(col, 1.0);
 }
